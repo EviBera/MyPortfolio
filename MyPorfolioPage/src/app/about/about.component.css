@@ -1,0 +1,18 @@
+.welcome {
+    text-align: center;
+}
+
+.intro {
+    margin: 10px 30px 10px 10px;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
