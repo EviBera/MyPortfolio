@@ -10,7 +10,31 @@
     font-size: 20px;
 }
 
+.firstRow {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.secondRow {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
 .name {
     font-size: 30px;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .links {
+        gap: 10px;
+        font-size: 15px;
+        flex-direction: column;
+    }
+    .container {
+        gap: 100px;
+    }
+
+  }
