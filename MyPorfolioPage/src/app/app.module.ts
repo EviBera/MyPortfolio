@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { StackComponent } from './stack/stack.component';
+import { MarkdownModule, MarkedOptions, MarkdownService } from 'ngx-markdown';
+import { marked } from 'marked';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { StackComponent } from './stack/stack.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
