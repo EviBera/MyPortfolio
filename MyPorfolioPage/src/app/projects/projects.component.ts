@@ -21,6 +21,15 @@ workflow for CI. At this moment I work on the frontend with React.`,
       ]
     },
     {
+      name: "Adopt a pet",
+      description: `A full-stack application with .NET 8.0 backend, Angular 18 frontend, and
+      PostgreSQL database. This website is under construction, I am working 
+      on it for an imaginary pet rescue team, that looks for adopters for pets.`,
+      links: [
+        "https://github.com/EviBera/adopt-a-pet"
+      ]
+    },
+    {
       name: "Freestyle MERN-project",
       description: `As a final project in the Web module, our team has built a movie night planner
 application to summarize our current studies. As a team member, I have worked both on

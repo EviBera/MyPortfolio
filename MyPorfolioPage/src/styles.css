@@ -12,6 +12,10 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+    font-size: 25px;
+}
+
 .flex-container {
     display: flex;
 }
@@ -25,4 +29,8 @@ a {
 
 a.active {
     background-color: #e6e6e6;
+}
+
+ul {
+    list-style-type: none;
 }

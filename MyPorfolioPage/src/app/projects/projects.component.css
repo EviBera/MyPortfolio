@@ -1,0 +1,16 @@
+.description {
+    max-width: 80%;
+}
+
+hr {
+    color: #595959;
+}
+
+li {
+    margin-top: 50px;
+}
+
+.link{
+    border: none;
+    font-size: 20px;
+}

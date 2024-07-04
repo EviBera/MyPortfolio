@@ -1,6 +1,15 @@
 <h2>My recent projects</h2>
 <ul>
     <li *ngFor="let project of projects">
-        {{project.name}}
+        <h3>{{project.name}}</h3>
+        <div class="description">
+            <p>
+                {{project.description}}
+            </p>
+            <div *ngFor="let link of project.links">
+                <a href={{link}} target="_blank" class="link">{{link}}</a>
+            </div>
+            <hr>
+        </div>
     </li>
 </ul>
