@@ -20,15 +20,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./MyPortfolioPage
 
       - name: Build project
         run: npm run build -- --configuration production --base-href "/MyPortfolio/MyPortfolioPage/"
+        working-directory: ./MyPortfolioPage
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/my-portfolio-page
+          publish_dir: ./MyPortfolioPage/dist/my-portfolio-page
 
 permissions:
   contents: write
