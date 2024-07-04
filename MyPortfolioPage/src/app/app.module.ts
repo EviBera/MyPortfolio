@@ -8,8 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { StackComponent } from './stack/stack.component';
-import { MarkdownModule, MarkedOptions, MarkdownService } from 'ngx-markdown';
-import { marked } from 'marked';
+import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
