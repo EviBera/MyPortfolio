@@ -15,3 +15,14 @@ h2 {
 .flex-container {
     display: flex;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+    border: solid black 1px;
+    padding: 5px;
+}
+
+a.active {
+    background-color: #e6e6e6;
+}
