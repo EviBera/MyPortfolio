@@ -14,3 +14,16 @@ li {
     border: none;
     font-size: 20px;
 }
+
+h2 {
+    padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+
+    ul {
+        display: block;
+        width: 130vw;
+    }
+
+  }

@@ -20,6 +20,10 @@ a {
     border: none;
 }
 
+h2 {
+    padding-left: 40px;
+}
+
 @media (max-width: 600px) {
     .contact-data div {
         font-size: 20px;
