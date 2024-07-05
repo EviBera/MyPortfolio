@@ -23,7 +23,7 @@ jobs:
         working-directory: ./MyPortfolioPage
 
       - name: Build project
-        run: npm run build -- --configuration production --base-href "/MyPortfolio/MyPortfolioPage/"
+        run: npm run build -- --configuration production --base-href "/MyPortfolioPage/"
         working-directory: ./MyPortfolioPage
 
       - name: Deploy to GitHub Pages
