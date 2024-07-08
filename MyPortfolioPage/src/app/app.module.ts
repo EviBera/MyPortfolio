@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StackComponent } from './stack/stack.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(), 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
