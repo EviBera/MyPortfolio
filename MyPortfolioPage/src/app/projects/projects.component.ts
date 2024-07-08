@@ -9,12 +9,20 @@ import { IProject } from './project.model';
 export class ProjectsComponent {
   projects: IProject[] = [
     {
+      name: "My Porfolio Page",
+      description: `This website you are looking at currently. It is made with Angular 18.`,
+      links: [
+        "https://github.com/EviBera/MyPortfolio",
+        "https://evibera.github.io/MyPortfolio/"
+      ]
+    },
+    {
       name: "Craftsman Contact",
       description: `This is a .NET 8.0 web application for connecting clients and various kinds of craftsmen.
 The app uses an MSSQL database and Entity Framework to deal with data. The project
 includes Identity for user handling. The unit test project uses NUnit and Moq, for
 integration testing I used xUnit. Based on the tests I have set up GitHub Actions
-workflow for CI. At this moment I work on the frontend with React.`,
+workflow for CI. I have added a React frontend with React Bootstrap to style the UI.`,
       links: [
         "https://github.com/EviBera/CraftsmanContact",
         "https://craftsmen.onrender.com"
@@ -31,7 +39,7 @@ workflow for CI. At this moment I work on the frontend with React.`,
     },
     {
       name: "Freestyle MERN-project",
-      description: `As a final project in the Web module, our team has built a movie night planner
+      description: `As a final project in CodeCool's Web module, our team has built a movie night planner
 application to summarize our current studies. As a team member, I have worked both on
 the frontend (React) and on the backend (Express.js, Node.js, and MongoDB).`,
       links: [
@@ -45,7 +53,7 @@ the frontend (React) and on the backend (Express.js, Node.js, and MongoDB).`,
 user-chosen city. The database stores the geocoordinates of requested cities and the
 solar data for the given day. During the project I have learned about asynchronous
 programming, ORM (Entity Framework Core), authentication and authorization
-(Identity, JSON Web Tokens). This was a solo project, I worked on the application alone.`,
+(Identity, JSON Web Tokens). This was a solo project, I worked on the application alone in CodeCool's last module.`,
       links: [
         "https://github.com/CodecoolGlobal/solarwatch-2-csharp-EviBera",
         "https://github.com/CodecoolGlobal/solarwatch-3-csharp-EviBera",
@@ -60,11 +68,6 @@ programming, ORM (Entity Framework Core), authentication and authorization
       description: `In this school project I used advanced MERN stack operations and routing. The
 application displays and handles 'employee data' in various ways.`,
       links: ["https://github.com/CodecoolGlobal/the-employee-madness-v2-react-EviBera"]
-    },
-    {
-      name: "My Porfolio Page",
-      description: `This website you are looking at currently.`,
-      links: ["https://github.com/EviBera/MyPortfolio"]
     }
   ];
 }
