@@ -9,3 +9,32 @@
         <a href="https://github.com/EviBera" target="_blank">github.com/EviBera</a>
     </div>
 </div>
+<div>
+    <div [formGroup]="form" class="contact-form">
+        <h3>You can send a direct message here:</h3>
+        <form action="javascript:void(0)" (submit)="send()">
+            <div class="form-item">
+                <label for="name">Your name:</label>
+                <input formControlName="from_name" type="text" name="name" id="name"
+                    placeholder="Enter your name, please." />
+            </div>
+
+            <div class="form-item">
+                <label for="email">Your email:</label>
+                <input formControlName="from_email" type="email" name="email" id="email"
+                    placeholder="Enter your email, please." />
+            </div>
+
+            <div class="form-item">
+                <label for="message">Your message:</label>
+                <textarea formControlName="message" type="text" name="message" id="message"
+                    placeholder="Type your message here. I will not reply if your message is nasty.">
+            </textarea>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="send-btn">Send message</button>
+            </div>
+        </form>
+    </div>
+</div>

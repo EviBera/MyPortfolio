@@ -24,6 +24,58 @@ h2 {
     padding-left: 40px;
 }
 
+.contact-form {
+    max-width: 400px; 
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right bottom, #c2f0f0, #9bd1d1, #75b3b3, #4e9696, #1f7a7a);
+}
+
+.form-item {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: large;
+    border: 1px solid black;
+}
+
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+    font-size: medium;
+}
+
+.form-item textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.send-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: medium;
+    cursor: pointer;
+    background-color: white;
+}
+
 @media (max-width: 600px) {
     .contact-data div {
         font-size: 20px;
