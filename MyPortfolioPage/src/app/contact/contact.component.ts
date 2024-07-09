@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
 @Component({
@@ -9,17 +9,23 @@ import emailjs from '@emailjs/browser';
 })
 export class ContactComponent {
 
-  form: FormGroup = this.formBuilder.group({
-    from_name: '',
-    from_email: '',
-    message: ''
-  });
+  form: FormGroup;
 
   constructor(private formBuilder: FormBuilder){
+    this.form = this.formBuilder.group({
+      from_name: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
+      from_email: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(500)]]
+    });
 
   }
 
   async send(){
+    if(this.form.invalid){
+      this.form.markAllAsTouched();
+      return;
+    }
+
     emailjs.init('VHI-vVdX1-72cIw2p');
     let response = await emailjs.send("service_xdmy7zr","template_opq3tnj",{
       from_name: this.form.value.from_name,
@@ -32,12 +38,3 @@ export class ContactComponent {
     this.form.reset();
   }
 }
-
-/*
-Code for using EmailJS:
-  emailjs.send("service_xdmy7zr","template_opq3tnj",{
-    from_name: "Test User",
-    from_email: "testuser@email.com",
-    message: "Nice.",
-  });
-*/
