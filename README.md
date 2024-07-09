@@ -8,7 +8,7 @@ I made this simple application to introduce myself.
 
 
 
-You can reach it ![here] (https://evibera.github.io/MyPortfolio)
+You can reach it ![here](https://evibera.github.io/MyPortfolio)
 
 
 
