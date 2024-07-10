@@ -13,7 +13,11 @@
 
 .contact-data i {
     margin-right: 8px;
-    font-size: 50px;
+}
+
+.contact-data p {
+    margin: 0px;
+    font-size: inherit;
 }
 
 a {

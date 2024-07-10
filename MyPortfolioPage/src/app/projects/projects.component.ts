@@ -10,7 +10,7 @@ export class ProjectsComponent {
   projects: IProject[] = [
     {
       name: "My Porfolio Page",
-      description: `This website you are looking at currently. It is made with Angular 18.`,
+      description: `This website you are looking at currently. It is made with Angular 16.2.`,
       links: [
         "https://github.com/EviBera/MyPortfolio",
         "https://evibera.github.io/MyPortfolio/"
@@ -19,10 +19,11 @@ export class ProjectsComponent {
     {
       name: "Craftsman Contact",
       description: `This is a .NET 8.0 web application for connecting clients and various kinds of craftsmen.
-The app uses an MSSQL database and Entity Framework to deal with data. The project
-includes Identity for user handling. The unit test project uses NUnit and Moq, for
-integration testing I used xUnit. Based on the tests I have set up GitHub Actions
-workflow for CI. I have added a React frontend with React Bootstrap to style the UI.`,
+The app uses a PostgreSQL database and Entity Framework Core to deal with data. The project
+includes Identity for user handling, JWT for authentication. The unit test project uses 
+NUnit and Moq, for integration testing I used xUnit. Based on the tests I have set up 
+GitHub Actions workflow for CI/CD. I have added a React frontend with React Bootstrap 
+to style the UI. The app is deployed through DockerHub on Render.`,
       links: [
         "https://github.com/EviBera/CraftsmanContact",
         "https://craftsmen.onrender.com"
@@ -65,9 +66,31 @@ programming, ORM (Entity Framework Core), authentication and authorization
     },
     {
       name: "The Employee Madness",
-      description: `In this school project I used advanced MERN stack operations and routing. The
-application displays and handles 'employee data' in various ways.`,
+      description: `In this school project I have used advanced MERN stack operations and 
+      routing. The application displays and handles 'employee data' in various ways.`,
       links: ["https://github.com/CodecoolGlobal/the-employee-madness-v2-react-EviBera"]
+    },
+    {
+      name: "Get to know Lara",
+      description: `This is the very first project along my journey in learning the 
+      Laravel framework. I used PHP 8.1, Laravel, Sanctum for authorization, MariaDB 
+      for storing data on the backend and React to build the frontend. 
+      (The application is still under construction.)`,
+      links: ["https://github.com/CodecoolGlobal/get-to-know-lara-php-EviBera.git"]
+    },
+    {
+      name: "The ThunderstORM",
+      description: `This project serves for practicing database operations, handling 
+      PhpSpreadsheet and making a custom Artisan command. It also uses PHP 8.1 and Laravel.`,
+      links: ["https://github.com/CodecoolGlobal/the-thunderstorm-php-EviBera.git"]
+    },
+    {
+      name: "El Proyecte Grande",
+      description: `The El Proyecte Grande is a team PHP Laravel project where we 
+      experienced creating a webshop. My task was to write the Product Design Document 
+      and make the controllers and some of the routing. We practiced agile methodology 
+      and worked in a Scrum team for multiple sprints.`,
+      links: ["https://github.com/CodecoolGlobal/el-proyecte-grande-design-general-hajosroli.git"]
     }
   ];
 }
