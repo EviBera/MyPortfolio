@@ -10,6 +10,7 @@ import emailjs from '@emailjs/browser';
 export class ContactComponent {
 
   form: FormGroup;
+  isSending = false;
 
   constructor(private formBuilder: FormBuilder){
     this.form = this.formBuilder.group({
@@ -26,15 +27,25 @@ export class ContactComponent {
       return;
     }
 
+    this.isSending = true;
+
     emailjs.init('VHI-vVdX1-72cIw2p');
-    let response = await emailjs.send("service_xdmy7zr","template_opq3tnj",{
-      from_name: this.form.value.from_name,
-      from_email: this.form.value.from_email,
-      message: this.form.value.message,
-    });
 
-    alert('Your message has been sent.');
+    try {
+      let response = await emailjs.send("service_xdmy7zr","template_opq3tnj",{
+        from_name: this.form.value.from_name,
+        from_email: this.form.value.from_email,
+        message: this.form.value.message,
+      });
+      
+      alert('Your message has been sent.');
+      
+      this.form.reset();
 
-    this.form.reset();
+    } catch (error) {
+      alert('Failed to send the message. Please try again.');
+    } finally {
+      this.isSending = false;
+    }    
   }
 }
